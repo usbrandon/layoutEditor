@@ -6,6 +6,8 @@ deploy:
   provider: releases
   api_key:
     secure: lwISM6aKMfDR67RQyMBrkBj+rzLyuOfRCyiE9iZM3F+hSKAbXz+0hpIsC6jo90LkrtBpNFZq2U2k5cEuEWCrlmlgqsWfeWWihPQg0WvSFCZej6wvGlOc1sjRDdNS+nIYX+a46aIrh5TMW5vNRhM8YnPVwhNNXumm3e5m90YJjDGcz+MWdoGXfsyxq7wjOKjreK8RYP5iGNtlcMrH4o3j6wj8xb1F2vuA49Fh3BIeLwqFZgg/RVpY8jwzY8T3P1k9cwptZjfwt/Ui4kkF8UrfjedSPnqxb3mfLSzgkFcZ1nF/dj/mekKMQ14s9h+piKSHlKWquE77nk0/zn6nNwSfEeOyBkOuZfv0Gqex4Fw0c1TFWSpUTIgI8vfjKTAm+HwYhQEV5tFNTTA9J4WGq9TXI84yzTY+C87cORFWGzgV4jqnUrkRngn0H8yFjetpN8lkNFugPQwOcTn5Jtuw+N1TfPgc/xdWHPTfLLdk0FEvj0Swj+WEKmvqkzcM8lJiSiGmEYcRrYDHsNztklXJc2ResRJ2IXJnMZ4hYw3yRICp2QJletaxzH0mjN6RsQ56UBaxIFVTxRN86Nao8c9I/DNQFYjkBpXhnLDOGQPkaS6O4/xxrFMbe2jiy+7Rc20gS0lZM1yQseZMeEq+QCrfVGwVXm9A9NkqIRwt2t7G7gotVp8=
-  file: dist/+.zip
+  file: dist/*.zip
+  file_glob: true
+  skip_cleanup: true
   on:
     repo: webdetails/layoutEditor
