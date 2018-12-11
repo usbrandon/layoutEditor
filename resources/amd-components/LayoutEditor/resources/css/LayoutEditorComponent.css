@@ -1,0 +1,623 @@
+/***** Layout Editor Plugin CSS file *****/
+
+.notify-bar,
+.notify-bar,
+.notify-bar {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 20px;
+}
+
+.notify-bar .notify-bar-icon {
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+
+.notify-bar .notify-bar-message {
+    text-align: center;
+    padding-left: 36px;
+    padding-top: 5px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+}
+
+.notify-bar .notify-bar-message:before,
+.notify-bar .notify-bar-message:after {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    content: "";
+}
+
+.notify-bar .notify-bar-message:before {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-left: -24px;
+}
+
+.notify-bar .notify-bar-message:after {
+    height: 5px;
+    width: 8px;
+    margin-left: -193px;
+    margin-top: 4px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.notify-bar-success {
+    color: #ffffff;
+    background: rgba(90, 183, 97, 0.8);
+}
+
+.notify-bar-success .notify-bar-icon {
+    display: none;
+    background: url('/pentaho/api/repos/pentaho-cdf-dd/css/../images/success_icon.png') no-repeat;
+}
+
+.notify-bar-error {
+    color: #af0e1a;
+    background-color: #df9fa3;
+}
+
+.notify-bar-error .notify-bar-icon {
+    background: url('/pentaho/api/repos/pentaho-cdf-dd/css/../images/error_icon.png') no-repeat;
+}
+
+.notify-bar-info {
+    color: #008ea5;
+    background-color: #b5dce9;
+}
+
+.notify-bar-info .notify-bar-icon {
+    background: url('/pentaho/api/repos/pentaho-cdf-dd/css/../images/info_icon.png') no-repeat;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif !important;
+}
+
+.configComponentMainCont button,
+.editModuleCont button {
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.saveDisabled {
+    color: #999999;
+    cursor: not-allowed;
+}
+
+.configEnabled+.configEnabled {
+    margin-top: -1px;
+}
+
+.removeModule {
+    display: none;
+}
+
+.removeCandidate {
+    display: none;
+}
+
+.removeButton {
+    display: none;
+}
+
+.configEnabled .editModuleCont .removeButton {
+    display: block;
+}
+
+.configComponentMainCont {
+    position: fixed;
+    height: 32px;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    background: #e1e3e3;
+    bottom: 0;
+    z-index: 1000;
+}
+
+body.visualMode .configComponentMainCont {
+    position: absolute;
+    height: 32px;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    background: #e1e3e3;
+    bottom: 0;
+    z-index: 99999;
+}
+
+.configComponentMainCont:before {
+    position: absolute;
+    content: "Hitachi Vantara Corporation 2018.";
+    line-height: 32px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #414141;
+}
+
+.configComponentMainCont.enabled:before {
+    display: none;
+}
+
+.insertCont.editCtrlGroupCont {
+    display: none;
+}
+
+/* TEMP: start*/
+
+.configComponentMainCont .assetFilterObj>div,
+.configComponentMainCont .settingsFilterObj>div,
+/* TEMP: end*/
+
+.configComponentMainCont button {
+    height: 32px;
+    line-height: 32px;
+    min-width: 32px;
+    font-size: 12px;
+    width: 100%;
+    border-left: 1px solid white;
+}
+
+.configComponentMainCont .enableCont.enableCont.enableCont {
+    width: 32px;
+    min-width: 32px;
+}
+
+.configComponentMainCont .enableCont button,
+.configComponentMainCont .addWidgetCont button {
+    padding: 0;
+}
+
+.configComponentMainCont .enableCont button {
+    width: 32px;
+    background: url(../img/actionBtnSprite.svg) top center no-repeat;
+}
+
+.configComponentMainCont .enableCont button:hover {
+    background: url(../img/actionBtnSprite.svg) top center no-repeat;
+    background-color: #edf0f0;
+}
+
+.configComponentMainCont .addWidgetCont button {
+    background: url(../img/actionBtnSprite.svg) 0 -32px no-repeat;
+}
+
+.configComponentMainCont .addWidgetCont button:hover {
+    background: url(../img/actionBtnSprite.svg) 0 -32px no-repeat;
+    background-color: #edf0f0;
+}
+
+.configComponentMainCont .buttonOptions.buttonOptions.buttonOptions {
+    background: url(../img/actionBtnSprite.svg) 0 -64px no-repeat;
+}
+
+.configComponentMainCont .buttonOptions.buttonOptions.buttonOptions:hover {
+    background: url(../img/actionBtnSprite.svg) 0 -64px no-repeat;
+    background-color: #edf0f0;
+}
+
+.configComponentMainCont .saveCont button {
+    background: #146BD2;
+    color: #FFFFFF;
+}
+
+.configComponentMainCont .saveCont button:disabled,
+.configComponentMainCont button:disabled,
+.configComponentMainCont button:disabled:hover {
+    opacity: 0.5;
+    cursor: default;
+    background: #ebebeb;
+    color: #424242;
+}
+
+.configComponentMainCont button:hover,
+.closeWithoutSaveDialog .closeConfirmWrapper button:hover,
+.enterExitCont.editCtrlGroupCont>div:hover,
+.ui-dialog.ui-dialog.ui-dialog button:not(:disabled):hover {
+    background: #4389db;
+    color: #FFFFFF;
+}
+
+.configComponentMainCont .assetFilterObj>div:hover:active,
+.configComponentMainCont .settingsFilterObj>div:hover:active,
+.configComponentMainCont button:hover:active,
+.closeWithoutSaveDialog .closeConfirmWrapper button:hover:active,
+.enterExitCont.editCtrlGroupCont>div:hover:active,
+.ui-dialog.ui-dialog.ui-dialog  button(:disabled):hover:active{ /**/
+    background: #0b60d1;
+    color: #ffffff;
+}
+
+.configComponentMainCont .assetFilterObj>div,
+.configComponentMainCont .settingsFilterObj>div,
+/* TEMP: end*/
+
+.configComponentMainCont button .configComponentMainCont .editCtrlCont.settingsFilterObj {
+    padding-left: 0px;
+}
+
+.configComponentMainCont .editCtrlGroupCont.insertCont {
+    padding-left: 0px;
+}
+
+.configComponentMainCont:not(.enabled) .editCtrlCont {
+    display: none;
+}
+
+.configComponentMainCont:not(.enabled) .editCtrlCont.enableCont {
+    display: inline;
+}
+
+.configComponentMainCont .insertCont.editCtrlGroupCont {
+    float: left;
+}
+
+.configComponentMainCont.enabled .editCtrlCont.enableCont {
+    display: none;
+}
+
+.placeholder-empty {
+    background: #e7f0f6;
+}
+
+/* aka revert btn */
+
+.configComponentMainCont .restoreOrigButton,
+/* aka reset btn */
+
+.configComponentMainCont .revertButton {
+    position: relative;
+    padding-left: 30px;
+}
+
+/* aka revert btn */
+
+.restoreOrigButton:before,
+/* aka reset btn */
+
+.revertButton:before {
+    content: "";
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.restoreOrigButton:before {
+    background: url('../img/layoutEditorSprite.svg') center right no-repeat;
+}
+
+.no-svg .restoreOrigButton:before {
+    background: url('../img/layoutEditorSprite.png') center right no-repeat;
+}
+
+.revertButton:before {
+    background: url('../img/layoutEditorSprite.svg') center left no-repeat;
+}
+
+.no-svg .revertButton:before {
+    background: url('../img/layoutEditorSprite.png') center left no-repeat;
+}
+
+/* component placeholder - toggle visibility button */
+
+.editModuleCont button.removeButton {
+    font-size: 0;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: url(../img/visibility_sprite.svg) center left no-repeat;
+    z-index: 10000;
+}
+
+.editModuleCont button.removeButton {
+    background: url('../img/visibility_sprite.svg') center left no-repeat;
+}
+
+.no-svg .editModuleCont button.removeButton {
+    background: url('../img/visibility_sprite.png') center left no-repeat;
+}
+
+.editModuleCont button.removeButton:hover {
+    background: url('../img/visibility_sprite.svg') center right no-repeat;
+    background-color: #ebebeb;
+}
+
+.no-svg .editModuleCont button.removeButton:hover {
+    background: url('../img/visibility_sprite.png') center right no-repeat;
+}
+
+/* component placeholder while in edit mode*/
+
+.configEnabled * {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.configEnabled .editModuleCont:after,
+.configEnabled .editModuleCont:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.configEnabled .editModuleCont:after {
+    background: #005da6;
+    border: 3px solid #fff;
+    opacity: 0.3;
+    z-index: 9999;
+}
+
+.configEnabled .editModuleCont:active:before {
+    border: 3px solid #005da6;
+    opacity: 1;
+}
+
+.configEnabled .editModuleCont {
+    cursor: pointer;
+}
+
+.widgetsSelector {
+    width: 200%;
+}
+
+/****************************/
+
+.col-xs-2.newDashImg {
+    background-image: url(../img/newDash.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.col-xs-2.saveAsImg {
+    background-image: url(../img/saveAs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.configComponentMainCont .buttonOptions .optionsContainer {
+    position: absolute;
+    bottom: 32px;
+    width: 200px;
+    text-align: left;
+    background: #f9f9f9;
+    color: #414141;
+    border-radius: 2px;
+    border: 1px solid #999999;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .6s ease-out, opacity .1s ease-out;
+    transition: max-height .6s ease-out, opacity .1s ease-out;
+}
+
+.configComponentMainCont .buttonOptions .optionsContainer.show {
+    height: auto;
+    opacity: 1;
+    max-height: 600px;
+}
+
+.optionsContainer .editMenu--item .editCtrlCont {
+    position: relative;
+    line-height: 32px;
+    height: 32px;
+    font-size: 14px;
+    padding-left: 32px;
+    background-position: center left;
+}
+
+.optionsContainer .editMenu--item .editCtrlCont:not(.saveDisabled):hover {
+    background: #edf0f0;
+}
+
+.optionsContainer .editMenu--item .editCtrlCont:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+}
+
+.optionsContainer .editMenu--item .save+.editCtrlCont:before {
+    background: url('../img/actionBtnSprite.svg') 0 -96px no-repeat;
+}
+
+.optionsContainer .editMenu--item .saveas+.editCtrlCont:before {
+    background: url('../img/actionBtnSprite.svg') 0 -128px no-repeat;
+}
+
+.optionsContainer .editMenu--item .newDashImg+.editCtrlCont:before {
+    background: url('../img/actionBtnSprite.svg') 0 -160px no-repeat;
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/*ux changes - tbreviewed*/
+
+.layoutEditorComponentToolbar {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+/*landing page placegholder copy*/
+
+.newDashboardObj h2 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.newDashboardObj h2:after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    bottom: -15px;
+    background: #3e4141;
+    transform: translateX(-240px);
+}
+
+.newDashboardObj>div {
+    font-size: 14px;
+}
+
+.newDashboardObj {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 120px;
+    top: calc(50% - 75px);
+}
+
+.enterExitCont.editCtrlGroupCont>div {
+    display: block;
+    float: left;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.enterExitCont.editCtrlGroupCont .enableCont,
+.enterExitCont.editCtrlGroupCont .cancelCont {
+    min-width: 80px;
+}
+
+.layoutEditorWrapper {
+    margin-bottom: 40px;
+    /*overflow: hidden;*/
+}
+
+/*
+.enterExitCont.editCtrlGroupCont .buttonOptions.editCtrlCont:before {
+    content: "...";
+    line-height: 24px;
+    font-size: 20px;
+    letter-spacing: .04em;
+}
+*/
+
+/*close without save popup*/
+
+.ui-dialog.ui-widget.ui-dialog.ui-widget {
+    padding: 0;
+    border: 0;
+    color: #424242;
+    font-family: 'Open Sans', Arial, sans-serif !important;
+}
+
+.ui-dialog-content.ui-widget-content.ui-dialog-content.ui-widget-content {
+    padding: 30px;
+    height: auto !important;
+}
+
+.ui-dialog.ui-dialog.ui-dialog button:focus {
+    outline: 0;
+}
+
+.ui-dialog.ui-dialog.ui-dialog button {
+    font-size: 12px;
+    font-weight: 400;
+    height: 32px;
+    border-radius: 2px;
+    margin: 0 10px;
+    border: 0;
+    padding: 0 10px;
+    font-family: 'Open Sans', Arial, sans-serif !important;
+}
+
+.ui-dialog.ui-dialog.ui-dialog .widgetButtons:first-child button{
+    margin-right: 0;
+}
+
+button.buttonNoSaveClose {
+    background: #146bd2;
+    color: #ffffff;
+}
+
+.closeWithoutSaveDialog .closeConfirmWrapper:last-child button {
+    margin-right: 0;
+}
+
+.closeWithoutSaveDialog .closeConfirmButtonsWrapper {
+    display: block;
+    float: right;
+    margin-top: 45px;
+}
+
+.closeWithoutSaveDialog .closeConfirmButtonsWrapper>div {
+    display: block;
+    float: left;
+}
+
+.closeWithoutSaveDialog .closeConfirmTitle,
+.mainWidgetPopupWindow .mainWidgetPopupWindowTitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.closeWithoutSaveDialog .closeConfirmDescription,
+.mainWidgetPopupWindowSubTitle {
+    font-size: 12px;
+}
+
+.closeWithoutSaveDialog p,
+.mainWidgetPopupWindowSubTitle {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.fileNameContainer .mainWidgetPopupWindowSubTitle{
+    margin-top: 30px;
+}

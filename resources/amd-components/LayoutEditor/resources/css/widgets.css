@@ -1,0 +1,533 @@
+/***********************************************************s
+ * Widgets dialog box CSS
+ ***********************************************************/
+
+.overlay {
+    margin: auto;
+    position: absolute;
+    background: rgba(20, 107, 210, 0.2);
+    z-index: 5;
+    width: calc(100% - 30px);
+    height: 100%;
+    border: 1px solid #146bd2;
+    cursor: url(../img/handOpen.svg), pointer;
+}
+
+.overlay:active {
+    cursor: url(../img/handClosed.svg), pointer;
+}
+
+.settingsButtonW {
+    z-index: 6;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background: #146BD2;
+}
+
+.settingsButtonW:after,
+.settingsButtonW:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 1px;
+    top: 3px;
+    left: 7px;
+    background: #ffffff;
+}
+
+.closeButtonW {
+    z-index: 6;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background: #146BD2;
+}
+
+.closeButtonW:after,
+.closeButtonW:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 1px;
+    top: 3px;
+    left: 7px;
+    background: #ffffff;
+}
+
+.closeButtonW:before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.closeButtonW:after {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.ui-widget-overlay.ui-front {
+    opacity: 0.9;
+    background: #f9f9f9;
+    z-index: 1050;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front {
+    z-index: 1100
+}
+
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+    display: none;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border: 0px;
+    border-radius: 0px;
+    background: #e1e3e3;
+}
+
+.mainWidgetPopupWindow {
+    background-color: grey;
+}
+
+.mainWidgetPopupWindow>div {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.mainWidgetPopupWindowTitle {}
+
+.col-xs-12.widgetsSelector {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.widgetsGroupSelector {
+    position: relative;
+    font-size: 12px;
+    color: #414141;
+    cursor: pointer;
+    padding-bottom: 0;
+    margin-top: 32px;
+}
+
+.widgetGroupButton {
+    line-height: 32px;
+    padding-left: 20px;
+}
+
+.widgetGroupButton:hover {
+    background: #edf0f0;
+}
+
+.widgetsGroupSelector:before {
+    content: "Folders";
+    font-size: 12px;
+    color: #414141;
+    line-height: 32px;
+    padding-left: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 32px;
+    background: #edf0f0;
+    transform: translateY(-32px);
+}
+
+.widgetSelectorButton {
+    position: relative;
+    line-height: 32px;
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.widgetSelectorButton>div:not(.widgetItemImage) {
+    display: block;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 20px;
+}
+
+.col-xs-12 .widgetSelectorButton:hover {
+    background-color: gray;
+}
+
+.mainWidgetPopupWindow .widgetsSelector {
+    font-size: 12px;
+    overflow-y: scroll;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 320px;
+}
+
+.mainWidgetPopupWindow .mainWidgetPanelWrapper {
+    background: #ffffff;
+    display: block;
+    float: left;
+}
+
+.mainWidgetPopupWindow .widgetsGroupSelectorWrapper {
+    min-width: 200px;
+}
+
+.mainWidgetPopupWindow .widgetsGroupSelectorWrapper,
+.mainWidgetPopupWindow .widgetsSelectorWrapper {
+    display: block;
+    float: left;
+}
+
+.mainWidgetPopupWindow .widgetsSelectorWrapper {
+    padding: 0px;
+    width: calc(100% - 200px);
+    float: right;
+    border-left: 1px solid #dfe3e6;
+}
+
+.widgetsSelectorHeader {
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    float: left;
+    width: 100%;
+    background: #edf0f0;
+}
+
+.widgetsSelectorHeader .widgetItemHeader {
+    display: block;
+    float: left;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.widgetsSelectorHeader .widgetItemHeader.column1 {
+    padding-left: 10px;
+}
+
+.newDashboardRow.hide {}
+
+.newDashboardObj.hide {
+    display: none;
+}
+
+.titleHeaderRow.hide {
+    display: none;
+}
+
+/*widgets popup table*/
+
+.widgetsSelectorWrapper .column1 {
+    width: 200px;
+    margin-left: 40px !important;
+}
+
+.widgetsSelectorWrapper .column2 {
+    width: 110px;
+}
+
+.widgetsSelectorWrapper .column3 {
+    width: 24px;
+    margin-left: 15px !important;
+}
+
+button.buttonActions.addButton {
+    color: white;
+    background-color: #146bd2;
+    border-color: #146bd2;
+}
+
+button.buttonActions.addButton.disabled {
+    color: grey;
+    background-color: white;
+    border-color: white;
+    cursor: not-allowed;
+}
+
+.mainWidgetsButtons .buttonActions {
+    width: 60px;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.mainWidgetsButtons .widgetButtons {
+    display: block;
+    float: right;
+}
+
+.widgetSelectorButton,
+.widgetGroupButton {
+    background: none;
+}
+
+.widgetSelectorButton.active,
+.widgetGroupButton.active {
+    color: #146bd2;
+}
+
+.hideWidget {
+    display: none;
+}
+
+.widgetSelectorCheckbox {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 1px solid #bababa;
+    display: block;
+    float: left;
+    margin: 7px 5px;
+}
+
+.widgetItemSelected.active .widgetSelectorCheckbox {
+    background: #146bd2;
+    border-color: #146bd2;
+}
+
+.widgetItemSelected.active .widgetSelectorCheckbox:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 8px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    top: 5px;
+    left: 4px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.mainWidgetsButtons {
+    margin-top: 30px;
+}
+
+.container.editDashboardEnabled .widgetPlaceholderWrapper:hover {
+    background: white;
+    border: 1px solid #999;
+}
+
+/* Popup container */
+
+.popupDiv {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+
+.popupDiv .popupRemove {
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 0px;
+    padding: 9px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 53%;
+    left: 5%;
+    margin-left: -54px;
+}
+
+/* Popup arrow */
+
+/*
+.popupDiv .popupRemove::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+*/
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+
+.popupDiv .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.widgetItemImage {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background: url(../img/widgetTypeSprite.svg) top right no-repeat;
+}
+
+.widgetItemImage.metricdotchart {}
+
+.active .widgetItemImage.metricdotchart {}
+
+.widgetItemImage.heatchart {}
+
+.active .widgetItemImage.heatchart {}
+
+.widgetItemImage.barchart {
+    background-position: -32px 0;
+}
+
+.active .widgetItemImage.barchart {
+    background-position: 0 0;
+}
+
+.widgetItemImage.piechart {
+    background-position: -32px -96px;
+}
+
+.active .widgetItemImage.piechart {
+    background-position: 0px -96px;
+}
+
+.widgetItemImage.linechart {
+    background-position: -32px -64px;
+}
+
+.active .widgetItemImage.linechart {
+    background-position: 0px -64px;
+}
+
+.widgetItemImage.table {}
+
+.active .widgetItemImage.table {}
+
+.widgetItemImage.unknown {}
+
+.active .widgetItemImage.unknown {}
+
+.widgetItemImage.kpis {}
+
+.active .widgetItemImage.kpis {}
+
+.widgetItemImage.others {}
+
+.active .widgetItemImage.others {}
+
+/************SCROLL BAR**********/
+
+.widgetsSelector::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: black;
+}
+
+.widgetsSelector::-webkit-scrollbar {
+    width: 5px;
+    /*background-color: #F5F5F5;*/
+    background-color: grey;
+}
+
+.widgetsSelector::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    /*background-color: #555;*/
+    background-color: grey;
+}
+
+/********************SAVE AS*********************/
+
+.folderExplorerContainer {
+    width: 100%;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.saveAsTitleContainer .SaveAsTitle {}
+
+.saveAsTitleContainer .saveAsSubTitle {
+    padding-left: 0px;
+    padding-bottom: 5px;
+}
+
+.fileNameContainer input {
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: #414141;
+    padding: 0 10px;
+    font-size: 12px !important;
+    width: 100%;
+}
+
+.fileNameContainer input:focus {
+    border: 1px solid #999999;
+    outline: 0;
+}
+
+div.folderexplorer.folderexplorer.folderexplorer {
+    background: #ffffff;
+    padding: 10px;
+}
+
+div.folderexplorer.folderexplorer.folderexplorer .selectedFolder {
+    background: #146bd2;
+    color: #ffffff !important;
+}
+
+.buttonsContainer .saveAsButtons {
+    width: 65px;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+button.saveAsActionButtons {
+    width: 55px;
+    height: 30px;
+}
