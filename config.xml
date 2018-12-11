@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<!--
+		Warning: Plugin uses the fist config.xml file found, so, :
+		plugin: pentaho-solutions/system/layoutEditor/config.xml
+		solution repository: /public/config/layoutEditor/config.xml
+	-->
+
+	<!-- The fist config in this file is the default one: -->
+	<config>
+		<configname>default</configname>
+		<basepaths>
+			<path>/public/plugin-samples/Layout Editor/Sample/</path>
+			<!--<path>/public/clp</path>-->
+		</basepaths>
+        <widgetsPath>Widgets/</widgetsPath>	
+        <templatespath>Templates/</templatespath>
+        <!--<templatespath>/public/plugin-samples/Layout Editor/Sample/Templates/</templatespath>-->
+        <defaulttemplate>template.wcdf</defaulttemplate>
+        <tmppath>tmp/</tmppath>
+		<whitelist>Widgets.*</whitelist>
+		<!--<whitelist>(/public/Layout Editor/Widgets.*)</whitelist>-->
+		<showgroups>true</showgroups>
+		<filetype>*.wcdf|FILES</filetype>
+		<showhidden>false</showhidden>
+	</config>
+
+</configs>

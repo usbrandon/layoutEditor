@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<DesignerComponent>
+  <Header>
+    <Name>Layout Editor Component</Name>
+    <IName>LayoutEditorComponent</IName>
+    <Description>Layout Editor Component</Description>
+    <Category>STANDARDCOMPONENTS</Category>
+    <CatDescription>Others</CatDescription>
+    <Order>550</Order>
+    <Type>PalleteEntry</Type>
+    <Version>1.0</Version>
+  </Header>
+  <Contents>
+    <Model>
+      <!-- <Property>parameter</Property> -->
+      <Property>editModuleInnerClass</Property>
+      <Property>extraOptions</Property>
+      <Property>executeAtStart</Property>
+      <Property>htmlObject</Property>
+      <!-- <Property name="parameters">xActionArrayParameter</Property> -->
+      <Definition name="chartDefinition">
+        <!-- <Property type="query">dataSource</Property> -->
+        <!-- <Property>inputFormat</Property> -->
+      </Definition>
+      <Property>preExecution</Property>
+      <Property>postExecution</Property>
+      <Property>postFetch</Property>
+      <Property>preChange</Property>
+      <Property>postChange</Property>
+      <Property>tooltip</Property>
+      <!-- <Property>listeners</Property> -->
+    </Model>
+    <Implementation supportsLegacy="false" supportsAMD="true">
+      <Code src="LayoutEditorComponent.js"/>
+      <Styles>
+        <Style version="1.0" src="LayoutEditorComponent.css">LayoutEditorComponent</Style>
+      </Styles>
+      <Dependencies>
+       <!-- <Dependency src="component.js" version="1.0">LayoutEditorComponent</Dependency> -->
+      </Dependencies>
+      <CustomProperties>
+        <DesignerProperty>
+          <Header>
+            <Name>editModuleInnerClass</Name>
+            <Parent>BaseProperty</Parent>
+            <DefaultValue>LayoutEditorWidget</DefaultValue>
+            <Description>Editable Layout Module Class</Description>
+            <Tooltip>CSS class for the editable layout modules.</Tooltip>
+            <InputType>String</InputType>
+            <OutputType>String</OutputType>
+            <Order>0</Order>
+            <Advanced>false</Advanced>
+            <Version>1.0</Version>
+          </Header>
+        </DesignerProperty>
+        <DesignerProperty>
+          <Header>
+            <Name>extraOptions</Name>
+            <Parent>BaseProperty</Parent>
+            <DefaultValue></DefaultValue>
+            <Description>Define Extra Options</Description>
+            <Tooltip>Define Extra Options.</Tooltip>
+            <InputType>JavaScript</InputType>
+            <OutputType>Function</OutputType>
+            <Order>0</Order>
+            <Advanced>true</Advanced>
+            <Version>1.0</Version>
+          </Header>
+        </DesignerProperty>
+       <DesignerProperty>
+        <Header>
+          <Name>priority</Name>
+          <Advanced>true</Advanced>
+          <Parent>BaseProperty</Parent>
+          <DefaultValue>0</DefaultValue>
+          <Description>Priority</Description>
+          <Tooltip>Priority for component execution component. Lower values have higher priority</Tooltip>
+          <InputType>Integer</InputType>
+          <OutputType>Number</OutputType>
+          <Order>50</Order>
+          <Version>1.0</Version>
+        </Header>
+        </DesignerProperty>
+      </CustomProperties>
+    </Implementation>
+  </Contents>
+</DesignerComponent>
